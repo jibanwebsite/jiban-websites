@@ -1,4 +1,4 @@
-
+import {HashRouter, Routes} from "react-router-dom"
 import AboutMeMain from "./components/aboutMeSection/AboutMeMain";
 import ContactMeMain from "./components/contactMeSection/ContactMeMain";
 import ExperienceMain from "./components/experienceSection/ExperienceMain";
@@ -13,6 +13,8 @@ import SubHeroMain from "./components/subHeroSection/SubHeroMain";
 
 function App() {
   return (
+    <HashRouter>
+      <Routes>
     <main className="font-body text-white relative overflow-hidden">
       <NavbarMain />
       <HeroMain />
@@ -26,6 +28,8 @@ function App() {
       <ContactMeMain />
       <FooterMain />
     </main>
+    </>
+    </>
   );
 }
 
