@@ -28,8 +28,8 @@ function App() {
       <ContactMeMain />
       <FooterMain />
     </main>
-    </>
-    </>
+    </Routes>
+    </HashRouter>
   );
 }
 
